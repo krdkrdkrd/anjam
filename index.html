@@ -61,6 +61,17 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
+
+  .telegram-button2 a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #0088cc;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
   .telegram-button a:hover {
     background-color: #006699;
   }
@@ -75,35 +86,14 @@
     font-family: 'gov.krd', Arial, sans-serif;
     /* Rest of your styling... */
   }
-  #kat {
-            font-size: 14px;
-            font-family: 'gov.krd', Arial, sans-serif;
-            color: #333;
-            text-align: center;
-        }
-        .countdown-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-        }
-        .countdown-item {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 10px;
-            align-items: center;
-            text-align: left;
-        }
-        .countdown-value {
-            font-size: 16px;
-            font-weight: bold;
-            
-        }
-        .countdown-label {
-            font-size: 1.2em;
-        }
-
+  .retrieve-button:hover {
+    background-color: #2980b9;
+  }
+  .visitor-count {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+  }
 </style>
 </head>
 <body>
@@ -115,32 +105,15 @@
   <div class="education-title">وەزارەتى پەروەردە</div>
   <div class="results">
     <h2>ئەنجامەکانی پۆلی ١٢</h2>
-    <p>خوێندکارانی خۆشەویست بە خۆشحاڵییەوە ئاگادارتان دەکەینەوە کە بەم زووانە ئەنجامەکانی پۆلی ١٢ بەردەست دەبێت.</p>
-    <h4 style="font-size:20px;color: black;"> <div id="kat">
-        <p>کات : </p>
-        <div class="countdown-container">
-            <div class="countdown-item">
-                <span class="countdown-label">رۆژ : </span>
-                <span id="days" class="countdown-value"></span>
-            </div>
-            <div class="countdown-item">
-                <span class="countdown-label">کاتژمێر : </span>
-                <span id="hours" class="countdown-value"></span>
-            </div>
-            <div class="countdown-item">
-                <span class="countdown-label">خوولەک : </span>
-                <span id="minutes" class="countdown-value"></span>
-            </div>
-            <div class="countdown-item">
-                <span class="countdown-label">چرکە : </span>
-                <span id="seconds" class="countdown-value"></span>
-            </div>
+    <p>خوێندکارانی خۆشەویست بە خۆشحاڵییەوە ئاگادارتان ئێستا دەتوانن ئەنجامەکانی پۆلی ١٢ وەربگرنەوە. </p>
+    <p style="color: red; font-size: 25px;">بەم زوانە</p>
     <p style="font-size: 15px;">تێبینی : لە کاتی راگەیاندی ئەنجامەکان ئەم لینکە گرێ دەدرێت بە لینکی سەرەکییەووە</p>
   </div>
   <div class="telegram-button">
+    <hr>
+    <div class="telegram-button">
     <a href="https://t.me/moekrg">ئاگاداری - زانیاری زیاتر</a>
   </div>
-  <script src="time.js"></script>
 </div>
 </body>
 </html>
